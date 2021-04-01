@@ -18,7 +18,10 @@ void correct_spelling(char* str, int max_symb)
     };
 
 }
-
+void cirlce_output(char* str)
+{
+    fputs(str, stdout);
+}
 
 int main()
 {
@@ -28,5 +31,6 @@ int main()
     char sourse_str[max_symb];
     fgets(sourse_str, max_symb, mf);
     correct_spelling(sourse_str, max_symb);
+    cirlce_output(sourse_str);
     return 0;
 }
